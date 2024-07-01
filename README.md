@@ -26,8 +26,24 @@
 
 ## Data
 <ul>
-  <li><a href="https://cam-can.mrc-cbu.cam.ac.uk/dataset/">Cam-CAN Dataset</a></li>
+  <li><a href="https://camcan-archive.mrc-cbu.cam.ac.uk/dataaccess/">Cam-CAN Dataset</a></li>
 </ul>
+
+## Result
+|Age|Sex|Slice Number|Sampling Process|
+|:-:|:-:|:----------:|----------------|
+|48|2(Male)|25|![그림25](https://github.com/MICHAA4/Conditional_Diffusion_Model/assets/172036158/4a73accd-655d-4e7e-939e-e08014da5e9c)|
+|48|2|35|![그림35](https://github.com/MICHAA4/Conditional_Diffusion_Model/assets/172036158/cce583ad-5081-4349-a8e4-469995d31809)|
+|48|2|45|![그림45](https://github.com/MICHAA4/Conditional_Diffusion_Model/assets/172036158/85939030-7bfc-4f93-8527-544937e2b8b2)|
+|48|2|55|![그림55](https://github.com/MICHAA4/Conditional_Diffusion_Model/assets/172036158/bc72a406-c928-460c-8a10-b8059c24682a)|
+
+## How to Run
+1. Clone this repository
+```
+https://github.com/MICHAA4/ConditionalDiffusionModel
+```
+2. Go to src folder
+3. Execute the .ipynb files!
 
 ## Helpful Repositories
 <ul>
