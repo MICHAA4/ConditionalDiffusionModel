@@ -1,40 +1,35 @@
-테니스 경기 영상 분석(Tennis Vision) 🎾
+<h1 align='center'>Conditional Diffusion 모델을 이용한 2D Brain MRI 생성 및 평가 🧠</h1>
 
-개요
+## 개요
 
-테니스는 전 세계적으로 가장 인기 있는 스포츠 중 하나로, 세계 스포츠 순위에서 상위권을 유지하고 있다. 하지만, 테니스 경기의 전략적인 측면을 분석하고 플레이어의 기술적인 수준을 정량적으로 측정하는 것은 아직까지 한계가 존재한다. 테니스의 관심이 높아지고 있는 만큼, 선수들뿐만 아니라 일반인들 역시 테니스 경기에 대해 더 잘 이해하고 더 나은 전략을 수립할 필요가 있다. 또한, 테니스를 좋아하는 많은 이들에게 유용한 정보를 제공하고, 더 나은 경기력으로 테니스를 즐길 수 있는 기회를 마련해야 한다.
-이렇게 테니스를 즐기는 많은 이들에게 유용한 정보를 제공하고 더 나은 경기력을 직접 수립할 수 있도록 하기 위해서는 테니스 경기 영상을 분석해야 한다. 전문적인 테니스 선수들의 경기 영상을 분석하여 선수들의 움직임 및 자세, 동작, 코트와 공의 위치 등을 더 자세히 제공받는다면, 더 나은 경기 방향을 직접 수립할 수 있다. 따라서, 컴퓨터 비전 기술과 데이터 분석을 통해 테니스 경기 영상을 분석하는 프로젝트를 진행하고자 한다.
+전 세계 AI 의료 시장은 급성장 중이며, AI 기반 의료 영상 분석이 혁신적인 발전을 이루고 있다. 특히 조기 진단과 빠른 치료가 중요한 뇌 질환 분야에서 AI는 딥러닝 기술을 기반으로 CT, MRI와 같은 뇌 영상 분석을 통해 최적의 치료 방법을 찾는 데 도움을 주고 있다. 하지만 의료 정보 데이터의 제한된 공개성과 개인정보 보호 문제, 그리고 데이터 획득에 따른 높은 비용 등이 주요한 제약 요인으로 작용하고 있다.<br/>이를 해결하기 위해 생성형 AI를 활용한다. 생성형 AI를 통해 의료 데이터를 생성함으로써, 데이터 부족과 제한성을 극복하고 개인정보 보호 문제를 해결할 수 있다. 생성된 데이터는 실제 환자의 정보가 아니므로 개인정보 보호 우려가 줄어들어, 의료 데이터의 공개와 공유를 촉진할 수 있는 긍정적인 요소로 작용할 것으로 기대된다.<br/><br/>본 프로젝트에서는 Diffusion Model을 사용하여 의료 이미지를 생성했다. Diffusion Model은 데이터를 완전한 노이즈로 만드는 Forward Process와 그 노이즈를 다시 데이터로 복원하는 Reverse Process를 통해 새로운 이미지를 샘플링한다. 이 과정에서 이미지의 노이즈를 효과적으로 제거하고 세부 사항을 잘 복원할 수 있는 UNet 구조를 사용했다.<br/>Diffusion Model UNet에는 Classifier-Free Guidance 기법을 적용하여 다양한 조건을 줄 수 있다. 이 기법은 별도의 Classifier 학습 없이 조건부 이미지를 생성할 수 있게 한다. 조건 정보 반영 정도를 결정하는 하이퍼파라미터인 Guidance Scale 값이 샘플링 이미지의 품질과 다양성에 매우 중요하다. Guidance Scale 값이 클수록 조건 정보의 반영 정도는 증가하지만, 이미지 품질이 떨어지거나 왜곡이 발생할 수 있다. 따라서, Guidance Scale 값을 적절히 조절하여 FID와 SSIM 평가 지표를 사용해 최적의 값을 찾고자 한다.
 
-Development Period
 
-2023.09 ~ 2023.12
+## Development Period
+2024.03 ~ 2024.06
 
-🧑‍🤝‍🧑Team Members
+## 👩🏻‍💻Member
+<ul>
+  <li><a href="https://github.com/ChaSeongYeon">차성연</a> @Cha SeongYeon</li>
+</ul>
 
-김성우(Team Leader) @Kim SungWoo
-남희정 @Nam HeeJung
-차성연 @Cha SeongYeon
-최호윤 @Choi HoYoon
-Professor
+## Professor
+<ul>
+ <li><a href="https://wonhee-lee.github.io/">이원희</a> @Lee WonHee</li>
+</ul>
 
-이원희 @Lee WonHee
-📌Objectives
+## 📌Objectives
+<ul>
+ <li>Generate Realistic Brain 2D MRI</li>
+ <li>Find The Optimal Guidance Scale Value</li>
+</ul>
 
-Track two tennis players
-Estimate two players pose
-Classify two players motion
-Detect tennis court lines
-Detect and Track the tennis ball
-Tennis Match Minimap
-Data
+## Data
+<ul>
+  <li><a href="https://cam-can.mrc-cbu.cam.ac.uk/dataset/">Cam-CAN Dataset</a></li>
+</ul>
 
-THETIS Dataset
-Helpful Repositories
-
-Tennis Project @avivcaspi
-Tennis_Tracking @MaximeBataille
-Tennis-Tracking @ArtLabss
-tennis_shot_recognition @antoinekeller
-tennis_action_recognition @chow-vincent
-TrackNet
-TRACE @hgupt3
+## Helpful Repositories
+<ul>
+  <li><a href="https://github.com/Project-MONAI/GenerativeModels">Project MONAI Generative Models</a> @Project-MONAI</li>
+</ul>
