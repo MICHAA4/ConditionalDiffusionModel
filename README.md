@@ -38,12 +38,16 @@
 |48|2|55|![그림55](https://github.com/MICHAA4/Conditional_Diffusion_Model/assets/172036158/bc72a406-c928-460c-8a10-b8059c24682a)|
 
 ## How to Run
-1. Clone this repository
+1. Clone MONAI repository
 ```
-https://github.com/MICHAA4/ConditionalDiffusionModel
+git clone https://github.com/Project-MONAI/MONAI
 ```
-2. Go to src folder
-3. Execute the .ipynb files!
+2. Clone this repository
+```
+git clone https://github.com/MICHAA4/ConditionalDiffusionModel
+```
+3. Go to src folder
+4. Execute the .ipynb files!
 
 ## Helpful Repositories
 <ul>
